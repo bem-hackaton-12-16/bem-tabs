@@ -1,0 +1,3 @@
+block('tabs')(
+	js()(true)
+);

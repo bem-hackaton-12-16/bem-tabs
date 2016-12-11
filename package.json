@@ -1,0 +1,24 @@
+{
+  "name": "bem-tabs",
+  "version": "0.1.0",
+  "description": "tabs bem-component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bem-core": "^4.0.0",
+    "enb": "^1.5.1",
+    "enb-bem-techs": "^2.2.2",
+    "enb-bemxjst": "8.5.0",
+    "enb-js": "^1.1.0",
+    "enb-postcss": "^1.2.0",
+    "postcss": "^5.2.6",
+    "postcss-calc": "^5.3.1",
+    "postcss-import": "^9.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "rebem-css": "^0.2.0"
+  }
+}
