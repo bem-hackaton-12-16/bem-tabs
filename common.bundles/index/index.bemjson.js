@@ -12,7 +12,20 @@ module.exports = {
     content: [
     	{
     		block: 'tabs',
-    		content: 'tabs'
+    		tabs: [
+                {
+                    title: 'tab1',
+                    content: 'content1'
+                },
+                {
+                    title: 'tab2',
+                    content: 'content2'
+                },
+                {
+                    title: 'tab3',
+                    content: 'content3'
+                }
+            ]
     	}
     ]
 };

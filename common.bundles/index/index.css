@@ -1,3 +1,11 @@
-.tabs {
-	display: block;
+.tabs__heads {
+    display: block;
+}
+.tabs__tab {
+    display: inline;
+    padding: 20px;
+    line-height: 40px;
+}
+.tabs__panes {
+    display: block;
 }

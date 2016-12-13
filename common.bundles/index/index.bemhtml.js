@@ -2476,7 +2476,42 @@ block('page').elem('js')(
 /* end: /Users/dvorson/projects/bemhackathon121216/bem-tabs/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
 /* begin: /Users/dvorson/projects/bemhackathon121216/bem-tabs/common.blocks/tabs/tabs.bemhtml.js */
 block('tabs')(
-	js()(true)
+	js()(true),
+	match(function() {
+		return this.ctx.tabs && this.ctx.tabs.length
+	})(
+		content()(function() {
+			var tabs = this.ctx.tabs;
+			return [
+				{
+					elem: 'heads',
+					content: tabs.map(function(tab, i) {
+						return {
+							elem: 'tab',
+							js: {
+								index: i 
+							},
+							elemMods: !i ? {active: 'yes'} : '',
+							content: tab.title
+						}
+					})
+				},
+				{
+					elem: 'panes',
+					content: tabs.map(function(tab, i) {
+						return {
+							elem: 'pane',
+							js: {
+								index: i 
+							},
+							elemMods: !i ? {active: 'yes'} : '',
+							content: tab.content
+						}
+					})
+				}
+			];	
+		})
+	)
 );
 
 /* end: /Users/dvorson/projects/bemhackathon121216/bem-tabs/common.blocks/tabs/tabs.bemhtml.js */

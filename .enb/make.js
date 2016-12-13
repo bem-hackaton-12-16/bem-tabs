@@ -15,7 +15,8 @@ var levels = [
                 require('postcss-import')(),
                 require('rebem-css'),
                 require('postcss-simple-vars')(),
-                require('postcss-calc')()
+                require('postcss-calc')(),
+                require('postcss-nested')
             ]
         },
         browserJS : require('enb-js/techs/browser-js')
